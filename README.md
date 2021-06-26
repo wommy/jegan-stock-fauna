@@ -1,1 +1,4 @@
-# jegan stock with fauna
+# jegan stock sqlite
+
+`yarn; node index.js;`
+

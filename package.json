@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "jegan stock built with sqlite and nodejs",
   "main": "index.js",
-  "repository": "git@github.com:wommy/jegan-stock-fauna.git",
+  "repository": "git@github.com:wommy/jegan-stock-sqlite.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
   "devDependencies": {
