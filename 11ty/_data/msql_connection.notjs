@@ -1,0 +1,17 @@
+const mysql = require('mysql')
+require('dotenv').config()
+
+let con = mysql.createConnection({
+	host: "localhost",
+	user: "w0m",
+	password: "jimithefrog"
+})
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  con.query("CREATE DATABASE mydb", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
+});

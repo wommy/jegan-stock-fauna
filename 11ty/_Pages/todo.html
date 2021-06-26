@@ -1,0 +1,30 @@
+---js
+{
+layout: "_Page",
+title: "todos",
+permalink: "/todos/index.html",
+todos: [
+'connect sqlite3',
+'get products',
+'get materials',
+'post product',
+'post material',
+]
+}
+---
+<style>
+</style>
+<div class="grid grid-cols-2 gap-4">
+	<div>
+		{%- for ea in todos %}
+		<div class="list-item">
+			<input type="checkbox" name="{{ea}}" id="{{ea}}">
+			<span> - </span>
+			<span>{{ea}}</span>
+		</div>
+		{%- endfor %}
+	</div>
+	<div>
+		<h3>post to</h3>
+	</div>
+</div>
