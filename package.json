@@ -1,0 +1,12 @@
+{
+  "name": "jegan-stock-sqlite",
+  "version": "1.0.0",
+  "description": "jegan stock built with sqlite and nodejs",
+  "main": "index.js",
+  "repository": "git@github.com:wommy/jegan-stock-fauna.git",
+  "author": "wommy <tom@technomad.media>",
+  "license": "MIT",
+  "devDependencies": {
+    "@leafac/sqlite": "^1.4.0"
+  }
+}
