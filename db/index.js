@@ -1,5 +1,5 @@
 const { Database, sql } = require('@leafac/sqlite')
-const database = new Database('stock.db')
+const database = new Database('./db/stock.db')
 const howManyMigrationsRan = database.pragma("user_version", { simple: true })
 
 const migrations = [
@@ -60,3 +60,7 @@ database.executeTransaction(()=>{
 		migration()
 	database.pragma(`user_version = ${migrations.length}`)
 })
+
+module.exports = {
+	getStock: database.all( sql`SELECT * from "quantity"` )
+}
